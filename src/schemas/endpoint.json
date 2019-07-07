@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://nodeinfo.diaspora.software/ns/schema/endpoint#",
+  "description": "NodeInfo schema for endpoint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["links"],
+  "properties": {
+    "links": {
+      "description": "The list of nodeinfo versions available.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rel", "href"],
+        "properties": {
+          "rel": {
+            "type": "string",
+            "description": "The URL to the nodeinfo schema version",
+            "examples": ["http://nodeinfo.diaspora.software/ns/schema/2.0"],
+            "pattern": "^(.*)$"
+          },
+          "href": {
+            "type": "string",
+            "description": "The URL to the nodeinfo json",
+            "examples": ["https://example.org/nodeinfo/2.0"],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+[submodule "nodeinfo"]
+	path = nodeinfo
+	url = https://github.com/jhass/nodeinfo/
+	branch = master

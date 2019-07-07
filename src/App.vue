@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="header">
+      <h1>Nodeinfo Validator</h1>
+      <span id='nav'><a href='https://github.com/jhass/nodeinfo/' target='_blank'>Nodeinfo</a> | <a href='https://github.com/rhaamo/nodeinfo_validator' target='_blank'>source</a></span>
+      <br><br>
     </div>
     <router-view/>
   </div>
